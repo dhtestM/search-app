@@ -36,7 +36,9 @@ const Cancel = props => (
 const styles = {
   root: {
     minWidth: 22,
-    minHeight: 24
+    minHeight: 24,
+    padding:0,
+    borderRadius: 13
   }
 };
 

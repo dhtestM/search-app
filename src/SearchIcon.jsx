@@ -24,7 +24,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 const Search = props => (
   <SvgIcon {...props}>
     <g fill="none" fillRule="evenodd">
-      <path fill={props.bColor} stroke={props.bColor} strokeWidth=".45" d="M8.364 2.636a5.734 5.734 0 0 1 5.727 5.728 5.735 5.735 0 0 1-5.727 5.727 5.734 5.734 0 0 1-5.728-5.727 5.734 5.734 0 0 1 5.728-5.728m4.447 11.449l4.81 4.674a.8.8 0 0 0 1.141.002.825.825 0 0 0 .003-1.156l-4.818-4.68a7.369 7.369 0 0 0 1.581-4.568C15.528 4.3 12.27 1 8.264 1S1 4.3 1 8.357c0 4.055 3.258 7.356 7.264 7.356 1.72 0 3.3-.612 4.547-1.628z" />
+      <path fill={props.bcolor} stroke={props.bcolor} strokeWidth=".45" d="M8.364 2.636a5.734 5.734 0 0 1 5.727 5.728 5.735 5.735 0 0 1-5.727 5.727 5.734 5.734 0 0 1-5.728-5.727 5.734 5.734 0 0 1 5.728-5.728m4.447 11.449l4.81 4.674a.8.8 0 0 0 1.141.002.825.825 0 0 0 .003-1.156l-4.818-4.68a7.369 7.369 0 0 0 1.581-4.568C15.528 4.3 12.27 1 8.264 1S1 4.3 1 8.357c0 4.055 3.258 7.356 7.264 7.356 1.72 0 3.3-.612 4.547-1.628z" />
     </g>
   </SvgIcon>
 );
@@ -49,7 +49,7 @@ const SearchIcon = ({
   className, ariaLabel, searchClick, ariaExpanded, iconStyle, seachMode, classes
 }) => (
   <IconButton classes={{ root: classes.root }} className={className} style={iconStyle} aria-label={ariaLabel} aria-expanded={ariaExpanded} onClick={searchClick}>
-    <Search viewBox="-3 -1 24 24" bColor={seachMode ? selectedColor : defaultColor} />
+    <Search viewBox="-3 -1 24 24" bcolor={seachMode ? selectedColor : defaultColor} />
   </IconButton>
 );
 

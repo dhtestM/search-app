@@ -1,19 +1,116 @@
 
+.outer {
+  height: 100%;
+  overflow-y: scroll;
+  .closeBtnContainer {
+    position: absolute;
+    left: 80%;
+    top: 26px;
+    .closeBtn {
+      display: inline-block;
+    }
+    span.esc {
+      font-size: 10px;
+      color: #808080;
+    }
+  }
+}
+.searchPanelContainer {
+  display: flex; 
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  .resCard {
+      font-size: 14px;
+      padding-bottom: 20px;
+      .title {
+        font-weight: bold;
+      }
+      .desc {
+        
+      }
+    }
+  .wrap {
+    text-align: left;
+    background: #fff;
+    padding: 25px;
+    min-height: 100vh;
+    .took {
+      font-size: 12px;
+      color: #808080;
+      margin-top: 5px;
+    }
+  }
+  .primaryWrap {
+    width: 50%; 
+    .primary {
+      padding: 0 25px;
+      .SearchinputBar {
+        clear: both;
+        input {
+          border-radius: 20px;
+        }
+      }
+      .msgContainer {
+        margin-top: 25px;
+      }
+      .emptyContainer {
+        margin-top: 30px;
+        &.primaryEmpty {
+          .emptyMsg {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .secondaryWrap {
+    width: 29%; 
+    margin-left:5px;
+    .secondary {
+      padding: 0 25px;
+       .flex {
+        margin-top: 64px;
+      }
+      .searchGlossaryDef {
+        padding: 3px 0 20px 0;
+      }
+      .searchResultContainer {
+        margin-top: 69px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.searchContentSelect {
+  min-width: 150px;
+}
+.desc {
+  margin-bottom: 20px;
+}
+.imgThumb {
+  max-width: 150px;
+}
+
+/*
 .search-container {
   margin-top: 100px;
   button {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
   }
 }
-.searchPanelContainer {
+.searchPanelContainer {display: table; 
   margin: 0 100px;
   height: 100%;
+  min-height: 700px;
   justify-content: center;
-  .searchPanel {
-    height: 100%;
+  // overflow-y: scroll;
+  .searchPanel {display: table-cell;
+    // height: 100%;
     position: relative;
     padding: 30px;
-    overflow-y: scroll;
+   // overflow-y: scroll;
     .searchResultContainer {
       height: 100%;
       margin-top: 50px;
@@ -34,7 +131,7 @@
     .resCard {
       padding-bottom: 20px;
     }
-    &.primary {
+    &.primary {width: 50%;
       height: 100%;
       border-right: 1px solid #dedede;
       #bootstrap-input {
@@ -48,7 +145,7 @@
           }
         }
       }
-    }
+    }*/
     .flex {
       height: 20px;
       margin-bottom: 20px;
@@ -64,8 +161,8 @@
         height: 5px;
         margin-left: 5px;
       }
-    }
-    &.secondary {
+    }/*
+    &.secondary {width: 30%;
       height: 100%;
       border-left: 1px solid #dedede;
       .searchResultContainer {
@@ -95,6 +192,7 @@
     }
   }
 }
+*/
 
 
 
